@@ -5,7 +5,7 @@ dataArray.forEach((string, index) => {
     dataArray[index] = parseInt(string)
 })
 
-let count = 0;
+let //count = 0;
 
 // arr = [4, 2, 1]
 function mergeSort(arr) {
@@ -29,7 +29,7 @@ function mergeSort(arr) {
 }
 
 function merge(left, right, arr) {
-    count++
+    //count++
     let leftIndex = 0;
     
     let rightIndex = 0;
@@ -37,7 +37,7 @@ function merge(left, right, arr) {
     let outputIndex = 0;
 
     while (leftIndex < left.length && rightIndex < right.length) {
-        count++
+        //count++
         if (left[leftIndex] < right[rightIndex]) { //left[0] = 4  < right[1] = 2 = false
             
             arr[outputIndex++] = left[leftIndex++];
@@ -48,11 +48,11 @@ function merge(left, right, arr) {
         }
     }
     for (let i = leftIndex; i < left.length; i++) {
-        count++
+        //count++
         arr[outputIndex++] = left[i]; //arr[2] = left[0] = 4 ... arr = [1, 2, 4]
     }
     for (let i = rightIndex; i < right.length; i++) {
-        count++
+        //count++
         arr[outputIndex++] = right[i]
     }
     return arr // [1, 2, 4]
@@ -60,5 +60,5 @@ function merge(left, right, arr) {
 
 console.log(dataArray.length)
 console.log(mergeSort(dataArray))
-console.log(count);
+console.log(//count);
 
